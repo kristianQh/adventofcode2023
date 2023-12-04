@@ -22,7 +22,7 @@ for i, game in enumerate(lines):
     my_numbers = set(map(int, game[2].split()))
     wins = len(w_numbers & my_numbers)
     if wins > 0:
-        total += 2 ** (wins -1)
+        total += 2 ** (wins - 1)
     for j in range(wins):
         card_nums[i+j+1] += card_nums[i]
 
