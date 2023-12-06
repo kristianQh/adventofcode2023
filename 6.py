@@ -1,3 +1,4 @@
+import math
 
 with open("input") as f:
     ts_t,ds_t = f.read().strip().split('\n')
@@ -17,8 +18,6 @@ print(res)
 # Apparently we can find the numbers between the two roots of the parabola: 
 # y = -x**2 + t*x - d
 # a = 1, b = t, c = -d
-import math
-
 t2 = int("".join(ts_t.split()[1:]))
 d2 = int("".join(ds_t.split()[1:]))
 num_ways2_b1 = math.floor((t2 + math.sqrt(t2**2 - 4*d2))/2)
